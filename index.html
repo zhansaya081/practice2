@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Solution for Frontend Mentor 'Time-Tracking Dashboard' challenge">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Time tracking dashboard</title>
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+      color: #000;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <main>
+    <h1 class="hidden">Time Tracking Dashboard</h1>
+    <div class="container grid">
+      <section class="profile">
+        <h2 class="hidden">Profile</h2>
+        <header tabindex="0" class="profile__content">
+          <img id="avatar" src="images/image-jeremy.png" alt="avatar">
+          <p>
+            <span class="profile__title">Report for</span>
+            <span class="profile__name">Jeremy Robson</span>
+          </p>
+        </header>
+        <section tabindex="0" class="profile__period">
+          <h3 class="hidden">Timeframes</h3>
+          <span tabindex="0" class="active period" data-period="daily">
+            Daily
+          </span>
+          <span tabindex="0" class="period" data-period="weekly">
+            Weekly
+          </span>
+          <span tabindex="0" class="period" data-period="monthly">
+            Monthly
+          </span>
+        </section>
+      </section>
+      <div class="result-widgets">
+        <div class="widget work">
+          <section class="widget__content">
+            <h2 tabindex="0" class="widget__title">Work</h2>
+            <img class="ellipsis" src="images/icon-ellipsis.svg" alt="">
+            <p tabindex="0" class="widget__second-line">
+              <span class="hidden">current</span>
+              <span class="widget__current" id="currentWork">--</span>
+              <span id="previousWork" class="widget__previous"></span>
+            </p>
+          </section>
+        </div>
+        <div class="widget play">
+          <section class="widget__content">
+            <h2 tabindex="0" class="widget__title">Play</h2>
+            <img class="ellipsis" src="images/icon-ellipsis.svg" alt="">
+            <p tabindex="0" class="widget__second-line">
+              <span class="hidden">current</span>
+              <span class="widget__current" id="currentPlay">--</span>
+              <span id="previousPlay" class="widget__previous"></span>
+            </p>
+          </section>
+        </div>
+        <div class="widget study">
+          <section class="widget__content">
+            <h2 tabindex="0" class="widget__title">Study</h2>
+            <img class="ellipsis" src="images/icon-ellipsis.svg" alt="">
+            <p tabindex="0" class="widget__second-line">
+              <span class="hidden">current</span>
+              <span class="widget__current" id="currentStudy">--</span>
+              <span id="previousStudy" class="widget__previous"></span>
+            </p>
+          </section>
+        </div>
+        <div class="widget exercise">
+          <section class="widget__content">
+            <h2 tabindex="0" class="widget__title">Exercise</h2>
+            <img class="ellipsis" src="images/icon-ellipsis.svg" alt="">
+            <p tabindex="0" class="widget__second-line">
+              <span class="hidden">current</span>
+              <span class="widget__current" id="currentExercise">--</span>
+              <span id="previousExercise" class="widget__previous"></span>
+            </p>
+          </section>
+        </div>
+        <div class="widget social">
+          <section class="widget__content">
+            <h2 tabindex="0" class="widget__title">Social</h2>
+            <img class="ellipsis" src="images/icon-ellipsis.svg" alt="">
+            <p tabindex="0" class="widget__second-line">
+              <span class="hidden">current</span>
+              <span class="widget__current" id="currentSocial">--</span>
+              <span id="previousSocial" class="widget__previous"></span>
+            </p>
+          </section>
+        </div>
+        <div class="widget self-care">
+          <section class="widget__content">
+            <h2 tabindex="0" class="widget__title">Self care</h2>
+            <img class="ellipsis" src="images/icon-ellipsis.svg" alt="">
+            <p tabindex="0" class="widget__second-line">
+              <span class="hidden">current</span>
+              <span class="widget__current" id="currentSelfCare">--</span>
+              <span id="previousSelfCare" class="widget__previous"></span>
+            </p>
+          </section>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href=" https://zhansaya081.github.io/practice---2/ "> Erbol - Zhansaya - Erasyl </a>.
+    </div>
+  </footer>
+  <script type="module" src="scripts/script.js"></script>
+</body>
+
+</html>
